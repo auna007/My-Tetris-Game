@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+html{
+    font-family: 'Chelsea Market','Caveat','Raleway', 'cursive';
+    overflow: hidden;
+
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#16191a , #242424, #16191a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;    
+
+}
+
+.right-container {
+    height: 100%;
+    padding: 1px;
+    display: flex;
+    background-color: #24258a;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.right-container #header{
+    height: 19%;
+    font-size: 1.9rem;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+canvas{
+    background-color: rgb(13, 13, 15);    
+}
+
+#nextTetrimino{
+    background-color: #f6f9fce8;
+    box-shadow: none;
+
+}
+.right-container #score{
+    height: 15%;
+    font-size: 18px;
+    color: white;
+}
+.right-container #score #level {
+    margin-bottom: 21px;
+}
+
+.right-container #next-container{
+    display: block;
+    align-self: center;
+    height: 45%;
+    width: 100%;
+    text-align: center;
+}
+.right-container .nav-btns{
+    height: 41.8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: center;
+    color: white;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: center; 
+}
+.right-container .nav-btns  .navs:active{
+    transform: scale(0.95);
+}
+.right-container .nav-btns .navs {
+    user-select: none;
+    background-color: #30336b;   
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 20%;    
+    width: 59%;
+    font-size: 1rem;
+}
+.right-container .nav-btns #left-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4px 4px;
+    width: 100%;
+    height: 20%;
+}
+.right-container .nav-btns #left-right div{
+    width: 48%;
+    height: 100%; 
+}
+.right-container #play-container{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.right-container #play-container #play{
+    user-select: none;
+    background-color: #071c44;
+    padding: 0.27rem 1.4rem;
+    border-radius: 5px;
+    font-size: 1.47rem;
+    height: auto;
+    border: 1px solid black;
+    color: white;
+}
+.right-container #play-container #play:active{
+    transform: scale(0.95);
+}
+/* .hidden{
+    color: #fff;
+    font-family: 'Caveat';
+    visibility: hidden;
+}
+.hidden2{
+    color:#fff;
+    font-family: 'Raleway';
+    visibility: hidden;
+} */

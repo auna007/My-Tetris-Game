@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tetris</title>
+  </head>
+
+  <body>
+    <canvas id="gridCanvas"></canvas>
+    <div class="right-container">
+      <div id="header">
+        <p>TETRIS</p>
+      </div>
+      <div id="next-container">
+        <canvas id="nextTetrimino"></canvas>
+      </div>
+      <div id="score">
+        <p>Level: <span id="level">1</span></p>
+        <p>Score: <span id="score-text">0</span></p>
+      </div>
+
+      <div id="mobile__contorls" class="nav-btns">
+        <div id="rotate" class="navs">Rotate</div>
+        <div id="left-right">
+          <div id="left-nav" class="navs">Left</div>
+          <div id="right-nav" class="navs">Right</div>
+        </div>
+        <div id="down" class="navs">Down</div>
+      </div>
+    
+      <div id="play-container" class="navs">
+        <span id="play">Play</span>
+      </div>
+
+    </div>
+
+    <audio id="beep" src="audio/beep.mp3"></audio>
+    <audio id="fourlines" src="audio/fourlines.wav"></audio>
+    <audio id="oneline" src="audio/oneline.wav"></audio>
+    <audio id="gameover" src="audio/gameover.wav"></audio>
+    
+    <script src="tetrimino.js"></script>
+    <script src="board.js"></script>
+    <script src="tetris-logic.js"></script>
+  </body>
+</html>
